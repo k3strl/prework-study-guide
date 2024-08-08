@@ -1,2 +1,2 @@
 # prework-study-guide
- University of Minnesota coding bootcamp prework study guide
+ Prework study guide; first class project for coding bootcamp.
