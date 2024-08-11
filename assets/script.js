@@ -23,7 +23,7 @@ function selectTopic() { // prints the randomly selected topic to the console
 }
 
 console.log('Here are the topics we learned through our prework:');
-listTopics() // Calling the function
+listTopics() // Calls the function
 
 console.log('Which topic should we study first?');
-selectTopic() // Calling the function
+selectTopic() // Calls the function
