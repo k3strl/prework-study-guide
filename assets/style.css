@@ -8,13 +8,14 @@ header,
 footer {
     width: 100%;
     height: 120px;
-    background-color: blue;
-    color: white;
+    background-color: #313172;
+    color: #dadaf1;
 }
 
 h1,
 h2 {
     text-align: center;
+
 }
 
 img {
@@ -32,14 +33,15 @@ ul {
 
 p {
     text-align: center;
-    font-size: 30px;
+    font-size: 1.875 em;
 }
 
 .card {
     width: 80%;
     margin: 40px auto;
-    border: 5px solid gray;
-    box-shadow: 5px 10px #888888;
+    border: 5px solid #616195;
+    box-shadow: 5px 10px #616195;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.875em; /* 14px/16=0.875em */
 }
 
