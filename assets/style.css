@@ -47,6 +47,6 @@ p {
     margin: 40px auto;
     border: 5px solid #616195;
     box-shadow: 5px 10px #616195;
-
+    border-radius: 15px;
 }
 
