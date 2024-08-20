@@ -50,17 +50,34 @@
       </section>
       <section class="card" id="git-section">
         <h2>Git</h2>
-        <ul>
-          <li><code>git status:</code> checks what branch we are currently on.</li>
-          <li><code>git checkout -b branch-name:</code> creates a new branch (-b) and switches to it (checkout)</li>
-          <li><code>git pull origin branch-name:</code> pulls the most recent build from the repo to local machine
-          <ul>
-            <li>It is important to always do a git pull to make sure that you have the latest version of the project on your local computer before you start to work. Otherwise, you might be working on outdated code!</li>
-          </ul>
+        <ul> 
+          <!-- CLI commands -->
+          <li><code>cd &lt;directory&gt;</code></li> navigates to the specified directory inside the currently selected directory.
+          <li><code>cd ..</code></li> backs out of currently selected directory.
+          <li><code>mkdir &lt;directory&gt;</code></li> creates a new directory.
+          <!-- Setup & Init -->
+          <li><code>git init</code></li> initalizes a Git repo inside the directory we are currently in. Make sure you are in the root directory of the project you wish to initialize!
+          <li><code>git clone &lt;url&gt;</code></li> fetches repo from hosted location via URL.
+          <!-- Stage & Snapshot -->
+          <li><code>git status</code> checks what branch we are currently on and reports any files that are tracked/untracked.</li>
           <li><code>git add -A:</code> adds all changes in the current working branch to the staging area.</li>
-          <li><code>git commit -m "describe changes here":</code> commits all staged changes to the repo. "-m" adds a commit message.</li>
-          <li><code>git push origin branch-name:</code> pushes local changes to an existing branch in the repo</li>
-          <li><a href="https://ndpsoftware.com/git-cheatsheet.html#loc=index;">Git Cheatsheet</a></li>
+          <li><code>git commit -m &lt;describe changes here&gt;</code> commits all staged changes to the repo. "-m" adds a commit message.</li>
+          <!-- Branch & Merge -->
+          <li><code>git branch</code></li> lists your branches, with an asterisk (*) to denote the currently active branch.
+          <li><code>git branch &lt;branch name&gt; </code></li> creates a new branch at the current commit.
+          <li><code>git merge &lt;branch&gt;</code></li> merges the specified branch into the current branch.
+          <!-- Inspect & Compare -->
+          <li><code>git log</code></li> shows the commit history for the currently-active branch.
+          <!-- Share & Update -->
+          <li><code>git checkout -b &lt;branch-name&gt;</code> creates a new branch (-b) and switches to it (checkout)</li>
+          <li><code>git push origin &lt;branch-name&gt;</code> pushes local changes to an existing branch in the repo</li>
+          <li><code>git pull origin &lt;branch-name&gt;</code> pulls the most recent build from the repo to local machine
+            <ul>
+              <li>It is important to always do a git pull to make sure that you have the latest version of the project on your local computer before you start to work. Otherwise, you might be working on outdated code!</li>
+            </ul>
+            <!-- Temp Commits -->
+            <li><code>git stash</code></li> saves modified and staged changes to a temporary staging area, in order to avoid losing work
+          <li><a href="https://education.github.com/git-cheat-sheet-education.pdf">GitHub's Git Cheat Sheet</a></li>
       </ul>
       </section>
       <section class="card" id="javascript-section">
